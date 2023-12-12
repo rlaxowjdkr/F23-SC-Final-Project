@@ -46,7 +46,7 @@ def RNN_LSTM(df, timestep=50, ep=50):
     df_test20 = df[train80:]
 
     # Create dictionary with just the "Close" stock price data
-    df_close = df.iloc[:, 3]
+    df_close = df.iloc[:, 3:4]
 
     # Create list of "Close" stock prices, separated into training and
     # testing set
