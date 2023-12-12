@@ -22,6 +22,7 @@ def ticker_list_mc(filename="data_1811_20231129.csv"):
     :param filename: Filename of csv file downloaded from database
     :return: Array of Ticker numbers
     """
+
     # Ensure the encoding recognizes Korean characters
     df = pd.read_csv(filename, encoding='unicode_escape')
     # Obtain data only from KOSPI market (biggest market in Korea)
@@ -41,6 +42,7 @@ def company_info(tick_list):
     :param tick_list: Array of ticker numbers
     :return: Pandas dataframe
     """
+
     info = []
     # Loop through each ticker number in the list, for 100 highest market
     # capitalization size companies
@@ -70,6 +72,7 @@ def ticker_name_dict():
 
     :return: Dictionary with ticker as key and name of company as value
     """
+
     tn_dict = pd.Series(company_info(ticker_list_mc()).Name.values,
                         company_info(ticker_list_mc()).Ticker.values).to_dict()
     return tn_dict
