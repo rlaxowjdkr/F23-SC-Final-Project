@@ -106,6 +106,8 @@ def plot_closing_price(company_list, df_list):
         ax.plot(df_list[k].index, df_list[k]['Close'])
         ax.set_title(ticker_name_dict().get(company_list[k]).upper())
         ax.tick_params(axis='x', labelrotation=45)
+        ax.set_xlabel("Date")
+        ax.set_ylabel("KR WON")
     plt.show()
 
 

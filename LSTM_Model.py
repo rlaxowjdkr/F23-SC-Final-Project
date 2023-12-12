@@ -4,8 +4,6 @@ from sklearn.preprocessing import MinMaxScaler
 from tensorflow.keras.layers import Dense, Dropout, LSTM
 from tensorflow.keras.models import Sequential
 
-from stock_data import company_list, get_stock_data
-
 """
 This file applies machine learning model, long short-term memory (LSTM) 
 model, a type of artificial recurrent neutral network used in deep learning, 
@@ -17,7 +15,7 @@ actual stock data and predicted stock data using the ML model.
 """
 
 
-def RNN_LSTM(df, timestep=50, ep=50):
+def RNN_LSTM(df, timestep=60, ep=50):
     """
     This function inputs dataframe containing time series stock data and
     timestep used in the model, and epochs (set at 50 initially) to put
@@ -134,7 +132,7 @@ def RNN_LSTM(df, timestep=50, ep=50):
     # prices from test data
     new_data = pd.concat([df_close.iloc[train80:, :].copy(),
                           pd.DataFrame(test_predicted,
-                                       columns=['Predicted Close Price'],
+                                       columns=['Predicted Close'],
                                        index=df_close.iloc[train80:,
                                              :].index)], axis=1)
 

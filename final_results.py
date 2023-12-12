@@ -37,10 +37,9 @@ def plot_closing_price(comp_list, df_list):
         ax.plot(df_list[k].index, df_list[k]['Predicted Close'])
         ax.set_title(ticker_name_dict().get(comp_list[k]).upper())
         ax.tick_params(axis='x', labelrotation=45)
+        ax.set_xlabel("Date")
+        ax.set_ylabel("KR WON")
     plt.show()
-
-    # Saves image of the plot named after company names
-    plt.savefig("Plot/" + ''.join(ticker_name_dict().get(comp_list).upper()) + '.png')
 
 
 if __name__ == '__main__':
