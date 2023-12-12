@@ -33,12 +33,14 @@ def plot_closing_price(comp_list, df_list):
     # Loops through all dataframes to create a plot
     for k in range(total):
         ax = fig.add_subplot(rows, cols, position[k])
-        ax.plot(df_list[k].index, df_list[k]['Close'])
-        ax.plot(df_list[k].index, df_list[k]['Predicted Close'])
+        ax.plot(df_list[k].index, df_list[k]['Close'], label='Close Price')
+        ax.plot(df_list[k].index, df_list[k]['Predicted Close'],
+                label='Predicted Close Price')
         ax.set_title(ticker_name_dict().get(comp_list[k]).upper())
         ax.tick_params(axis='x', labelrotation=45)
         ax.set_xlabel("Date")
         ax.set_ylabel("KR WON")
+        ax.legend()
     plt.show()
 
 

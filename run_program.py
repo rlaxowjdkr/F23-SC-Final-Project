@@ -13,11 +13,11 @@ if __name__ == '__main__':
     # Number of companies interested
     n = 4
 
-    # Sector of interest (can be none, which will not specify a sector)
-    sector = 'Technology'
+    # Sector of interest (can be None, which will not specify a sector)
+    sector = None
 
-    # Specifies start and end date for period of interest
-    # In 'YYYY-MM-DD' format
+    # Specifies start and end date for period of interest in 'YYYY-MM-DD'
+    # format
     start_date = '2020-12-01'
     end_date = '2023-12-01'
 
