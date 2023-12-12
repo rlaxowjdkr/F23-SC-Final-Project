@@ -8,7 +8,7 @@ There are several modules that are used for this program. Installation may be re
 - matplotlib.pyplot: Used to visualize data and create relevant graphs
 - sklearn.preprocessing: Uses MinMaxScaler() module to scale stock price data for ML processing
 - tensorflow.keras: API to develop deeplearning models
-- yfinance: API to scrape stock data from [Yahoo Finance](https://finance.yahoo.com/)
+- [yfinance](https://pypi.org/project/yfinance/): API to scrape stock data from [Yahoo Finance](https://finance.yahoo.com/)
 ## Code Structure and Running the Program
 ### Code Structure
 #### csv_processing.py
@@ -42,7 +42,7 @@ Input Categories:
 
 After appropriate inputs are recorded the user just needs to simply run run_program.py to create plots that include actual stock data and predicted stock data.
 
-For 4 (`n = 4`) companies with unspecified sector (`sector = None`) with start date as December 1st, 2020 (`start_date = '2020-12-01'`) and end date as December 1st, 2023 (`end_date = '2023-12-01'`), the figure is as following! 
-
+For **4 companies** (`n = 4`) with **unspecified sector** (`sector = None`) with **start date as December 1st, 2020** (`start_date = '2020-12-01'`) and **end date as December 1st, 2023** (`end_date = '2023-12-01'`), the figure is as following! 
+![n4sNone2020120120231201](https://github.com/rlaxowjdkr/F23-SC-Final-Project/blob/main/Plots/4_None.png)
 ## References
 
