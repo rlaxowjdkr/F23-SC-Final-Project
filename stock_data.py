@@ -34,6 +34,12 @@ def company_list(n, sector=None):
     # Raise error if number of companies to analyze is invalid
     if n < 1:
         raise Exception("Need at least 1 company to analyze!")
+    # Raise error if sector does not exist
+    if sector not in ["Technology", "Financial Services", "Healthcare",
+                      "Consumer Cyclical", "Industrials",
+                      "Communication Services", "Consumer Defensive", "Energy",
+                      "Basic Materials", "Real Estate", "Utilities", None]:
+        raise Exception("Sector does not exist!")
     # Create list of tickers for n highest market capitalization companies
     # when sector is not specified.
     elif sector is None:
