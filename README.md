@@ -9,7 +9,7 @@ Stock market prediction is gaining more attention as machine learning models are
 LSTM is a improved version of recurrent neural network (RNN) model. LSTM is good for sequence prediction tasks and excels in capturing long-term dependencies. Traditional RNNs have single hidden state passed through time, making it difficult for the network to learn long-term dependencies. Compared to RNNs, LSTM includes a memory cell, which can contain information for a longer period. This makes LSTM appropriate for applications such as time-series forecasting. The long-term dependency of the LSTM model is controlled by three gates; intput gate which decides what input is added to the memory cell, forget gate which decides what information is removed from the memory cell, and output gate which decides what output leaves the memory cell.
 
 ### LSTM Model used in this program
-LSTM model is established in **LSTM_Model.py**. There are several parameters/values used to specifically define this LSTM Model. These parameters/values will be defined below:
+LSTM model is established in **LSTM_Model.py**. There are several parameters/values used to specifically define this LSTM Model. Any changes to the parameters/values should be made directly on **LSTM_Model.py**. These parameters/values will be defined below:
 
 #### Size of train and test data
 From the user specified range of dates and their corresponding stock prices, certain proportion is used to train the data and the rest will be the test data which will be used to make predictions based on the train data. For this model, **80% of the data in the range has been selected as "train data"** and **rest 20% has been selected as "test data"**.
