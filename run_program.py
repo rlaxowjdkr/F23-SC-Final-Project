@@ -18,7 +18,7 @@ if __name__ == '__main__':
 
     # Specifies start and end date for period of interest in 'YYYY-MM-DD'
     # format
-    start_date = '2020-12-01'
+    start_date = '2017-12-01'
     end_date = '2023-12-01'
 
     ###########################################################################
