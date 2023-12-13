@@ -105,8 +105,8 @@ def RNN_LSTM(df, timestep=60, ep=50):
     model.summary()
 
     # Fit model to training set, running for certain number of epochs (
-    # running through entire training set) with batch size of 32
-    model.fit(x_train, y_train, epochs=ep, batch_size=32)
+    # running through entire training set) with batch size of 64
+    model.fit(x_train, y_train, epochs=ep, batch_size=64)
 
     # Reshape and process test data similar to training data
     combined_data = pd.concat([df_train80['Close'], df_test20['Close']],
