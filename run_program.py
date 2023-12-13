@@ -14,7 +14,7 @@ if __name__ == '__main__':
     n = 4
 
     # Sector of interest (can be None, which will not specify a sector)
-    sector = None
+    sector = 'Financial Services'
 
     # Specifies start and end date for period of interest in 'YYYY-MM-DD'
     # format

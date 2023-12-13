@@ -92,7 +92,7 @@ def RNN_LSTM(df, timestep=60, ep=50):
         LSTM(units=100, return_sequences=True))
     model.add(Dropout(rate=0.2))
     model.add(
-        LSTM(units=100), return_Sequences=False)
+        LSTM(units=100), return_sequences=False)
     model.add(Dropout(rate=0.2))
 
     # Assign 1 neuron to predict stock price
